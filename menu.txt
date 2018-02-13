@@ -1,0 +1,10 @@
+szerdai menu
+halleves: 500
+lecso: 1200
+palacsinta: 300
+
+keddi menu
+borsoleves: 500
+rantotthus: 1200
+puding: 300
+
