@@ -13,6 +13,7 @@ def main():
 
         if (secret == guess):
             print "Wow, you are awsome!!! This is really the " + str(secret)
+            break
         elif (secret > guess):
             print "It is bigger!"
         elif (secret < guess):
