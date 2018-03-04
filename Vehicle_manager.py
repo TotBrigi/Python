@@ -23,31 +23,32 @@ def edit_kilometers(vehicles):
         print str(index) + ") " + car.get_full_type()
         print""
 
-        selected_id = raw_input("What vehicle would you like to edit? (enter ID number): ")
-        selected_vehicle = vehicles[int(selected_id)]
+    selected_id = raw_input("What vehicle would you like to edit? (enter ID number): ")
+    selected_vehicle = vehicles[int(selected_id)]
 
-        new_kilometers = raw_input("Please enter new kilometers for %s: " % selected_vehicle.get_full_type())
-        selected_vehicle.kilometers = new_kilometers
+    new_kilometers = raw_input("Please enter new kilometers for %s: " % selected_vehicle.get_full_type())
+    selected_vehicle.kilometers = new_kilometers
 
-        print""
-        print "Kilometers are updated."
+    print""
+    print "Kilometers are updated."
 
 
 def edit_general_service_date(vehicles):
     print "Select the number of the car you'd like to edit: "
 
     for index, car in enumerate(vehicles):
-        print str(index) + ") " + car.get_full_type
+        print str(index) + ") " + car.get_full_type()
         print""
 
-        selected_id = raw_input("What vehicle would you like to edit? (enter ID number): ")
-        selected_vehicle = vehicles[int(selected_id)]
+    selected_id = raw_input("What vehicle would you like to edit? (enter ID number): ")
+    selected_vehicle = vehicles[int(selected_id)]
 
-        new_general_service_date = raw_input("Please enter new general service date for %s: " % selected_vehicle.get_full_type())
-        selected_vehicle.general_service_date = new_general_service_date
+    new_general_service_date = raw_input("Please enter new general service date for %s: " % selected_vehicle.get_full_type())
+    selected_vehicle.general_service_date = new_general_service_date
 
-        print""
-        print "General service date is updated."
+    print""
+    print "General service date is updated."
+
 
 def add_new_vehicle(vehicles):
     brand = raw_input("Please enter the brand of the new vehicle: ")
@@ -90,7 +91,7 @@ def main():
         elif selection.lower() == "c":
             edit_kilometers(vehicles)
         elif selection.lower() == "d":
-            edit_kilometers(vehicles)
+            edit_general_service_date(vehicles)
         elif selection.lower() == "e":
             print "Thank you for using Vehicle Manager. Goodbye!"
             break
